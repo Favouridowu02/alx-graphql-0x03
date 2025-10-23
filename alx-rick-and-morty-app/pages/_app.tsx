@@ -7,10 +7,10 @@ import ErrorBoundary from "@/components/ErrorBoundary";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <ApolloProvider client={client}>
+    // <ApolloProvider client={client}>
       <ErrorBoundary>
         <Component {...pageProps} />
       </ErrorBoundary>
-    </ApolloProvider>
+    // </ApolloProvider>
   );
 }
